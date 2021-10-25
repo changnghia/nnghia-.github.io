@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web đăng ký du lịch</title>
+    <style>
+        form table{
+            border-collapse: collapse;
+            background-color: #ff9;
+        }
+        form table td {
+            color: blue;
+        }
+        form table caption{
+            color: blue;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table border="1"cellpadding="3" style=" border: 1px solid blue;">
+            <caption>Đăng ký du lịch</caption>
+            <tr>
+                <td>Họ và tên</td>
+                <td>
+                    <input type="text" size="40">
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    <input type="text" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select name="tour" id="tour">
+                        <option value="">Buôn mê thuộc - Gia Lai- Kontum</option>
+                        <option value="">Cần Thơ</option>
+                        <option value="">TP Hồ Chí Minh</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input type="radio" name="phuongtien">
+                    <label for="">Máy bay</label>
+                    <input type="radio" name="phuongtien">
+                    <label for="">Xe ô tô</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset style="border: 2px solid red; width: 0; margin: auto;">
+                        <legend><i style="color: red;">Số lượng đoàn khách</i></legend>
+                        <table>
+                            <tr>
+                                <td>Người lớn</td>
+                                <td>
+                                    <input type="text" id="txt_nguoilon" size="6">
+                                </td>
+                                <td>Trẻ em</td>
+                                <td>
+                                    <input type="text" id="txt_treem" size="6">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td><textarea rows = "value" cols="30" style="resize: vertical;"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Đồng ý"" id="txt_dongy">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
